@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Planet Interactive 🌍</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌿 Our Planet: An Interactive Journey</h1>
+    <p>Inspired by the voice and vision of David Attenborough</p>
+  </header>
+
+  <main>
+    <!-- Event Handling Section -->
+    <section>
+      <h2>🎈 Explore the Planet</h2>
+      <button id="exploreBtn">Start Exploring</button>
+      <div id="hoverZone">Hover over Earth's wonders</div>
+      <input type="text" id="typeField" placeholder="Type to discover more...">
+    </section>
+
+    <!-- Interactive Elements Section -->
+    <section>
+      <h2>🌎 Diverse Ecosystems</h2>
+      <button id="themeChange">Change Theme</button>
+      <div class="slideshow">
+        <img id="ecosystemImg" src="https://via.placeholder.com/300x200?text=Rainforest" alt="Ecosystem Slideshow">
+      </div>
+      <div class="tabs">
+        <button class="tab" data-target="ocean">Ocean</button>
+        <button class="tab" data-target="desert">Desert</button>
+        <button class="tab" data-target="forest">Forest</button>
+        <div id="ocean" class="tab-content">The ocean covers 70% of our planet and is teeming with life.</div>
+        <div id="desert" class="tab-content hidden">Deserts are harsh, yet beautiful, home to unique species.</div>
+        <div id="forest" class="tab-content hidden">Forests are the lungs of the Earth, rich in biodiversity.</div>
+      </div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section>
+      <h2>🌱 Pledge to Protect Nature</h2>
+      <form id="pledgeForm">
+        <label>Email: <input type="email" id="email" required></label>
+        <small id="emailMsg"></small><br>
+        <label>Password: <input type="password" id="password" required></label>
+        <small id="passMsg"></small><br>
+        <button type="submit">Make My Pledge</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>"The future of humanity and indeed all life on Earth now depends on us." – David Attenborough</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
